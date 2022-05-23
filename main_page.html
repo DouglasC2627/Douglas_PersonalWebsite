@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!-- template: https://github.com/iamirsh/ahmadpf
+     Copyright 2020 ahmad  -->
+<html lang="en">
+
+<head>
+  <!-- control viewport -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <title>DouglasC - Portfolio</title>
+
+  <!-- css sheets -->
+  <link rel="stylesheet" href="CSS/animate.css" />
+  <link rel="stylesheet" media="screen" href="CSS/main_page_style.css" />
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- navigation bar -->
+  <div class="container navbar" >
+    <header>
+      <div class="lgo" >
+        <h1>Douglas Chao</h1>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="home_page.html"><u>Home</u></a></li>
+          <!-- directly go to the section with the # id value assigned -->
+          <li><a href="#about"><u>About Me</u></a></li>
+          <li><a href="#skills"><u>Skills</u></a></li>
+          <li><a href="#contact"><u>Contact Me</u></a></li>
+          <li><a href="cv_page.html" target="_blank"><u>CV</u></a></li>
+        </ul>
+      </nav>
+
+    </header>
+  </div>
+
+
+  <!-- start main section & first page (basic info) -->
+  <div class="container main-info-section">
+    <div class="text">
+      <h1>
+        <!-- use span for seperating each alphabets to create animation -->
+        <span>H</span>
+        <span class="m-left">i</span>
+        <span class="m-left">,</span>
+        <br>
+        <span>I</span>
+        <span class="m-left">'</span>
+        <span class="m-left">m</span>
+        <span class="name">D</span>
+        <span class="m-left name">o</span>
+        <span class="m-left name">u</span>
+        <span class="m-left name">g</span>
+        <span class="m-left name">l</span>
+        <span class="m-left name">a</span>
+        <span class="m-left name">s</span>
+        <br>
+      </h1>
+      <p>Taiwanese / 18 / UCL. IMB-FirstYear</p>
+      <!-- button to my CV -->
+      <a href="cv_page.html" target="_blank">My <b><u>Curriculum Vitae</u></b></a>
+    </div>
+
+    <div class="profile-image">
+      <img src="images/photo2.png" alt="My Photo - Douglas Chao">
+
+    </div>
+  </div>
+
+  <!-- "about me" section -->
+  <div class="container about" id="about">
+    <h1>About</h1>
+    <div class="about-me-info">
+      <p>I am first year undergrat student at UCL, BSc Information Management Science.</p>
+      <p>I like to work out, play sports & piano, have a nice walk everyday to relax</p>
+      <p>Still figuring out what I am passionated about towards my career.</p>
+    </div>
+    <!-- alt=blank, let blank if cannot load image-->
+    <img src="images/dotted-shape.png" alt="">
+  </div>
+
+  <!-- "skills" section -->
+  <div class="container skills" id="skills">
+
+    <h1>Skills</h1>
+    <p class="skills-info">I'm familiar with python and c#
+    <br>
+    I am learning HTML, CSS and JavaScript
+    <br>
+    Also possess various soft-skills such as: Time Management, Project Management, Adaptability, Communication
+    </p>
+
+    <!-- use two div to seperate text and skill bar & apply styles -->
+    <div class="html">
+      <div class="tag-cSharp">
+        <p>C#</p>
+      </div>
+      <div class="progressbar">
+        <div class="bar-cSharp"></div>
+      </div>
+    </div>
+
+    <div class="html">
+      <div class="tag-python">
+        <p>Python</p>
+      </div>
+      <div class="progressbar">
+        <div class="bar-python"></div>
+      </div>
+    </div>
+
+    <div class="html">
+      <div class="tag-html">
+        <p>HTML</p>
+      </div>
+      <div class="progressbar">
+        <div class="bar-html"></div>
+      </div>
+    </div>
+
+    <div class="html">
+      <div class="tag-css">
+        <p>CSS</p>
+      </div>
+      <div class="progressbar">
+        <div class="bar-css"></div>
+      </div>
+    </div>
+
+    <!-- create new class (tag2 & bar2) for different style of progress bar -->
+    <div class="html">
+      <div class="tag2-tm">
+        <p>Time MGMT</p>
+      </div>
+      <div class="progressbar2">
+        <div class="bar2-tm"></div>
+      </div>
+    </div>
+
+    <div class="html">
+      <div class="tag2-pm">
+        <p>Project MGMT</p>
+      </div>
+      <div class="progressbar2">
+        <div class="bar2-pm"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- button bring user to top -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  <!-- "contact me" section -->
+  <div class="container contact" id="contact">
+    <h1>Contact</h1>
+    <!-- create a form -->
+    <form>
+      <input type="text" name="name" placeholder="Full Name">
+      <input type="org" placeholder="Organisation">
+      <input type="email" placeholder="example@mail.com">
+      <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
+      <input type="submit">
+    </form>
+  </div>
+
+  <!-- semantic tags "footer" | template reference -->
+  <footer>
+    <hr>
+    <p>2020 Ahmad (Github - @iamirsh) Copyright. All Rights Reserved</p>
+  </footer>
+
+  <!-- link to other javascript files -->
+  <script src="js/ScrollMagic.min.js"></script>
+  <script src="js/TimelineLite.min.js"></script>
+  <script src="js/TweenMax.min.js"></script>
+  <script src="js/CSSPlugin.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
